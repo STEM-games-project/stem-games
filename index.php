@@ -63,24 +63,24 @@
                                 <li class="header-navbar__item has-sub">
                                     <a href="index.php">
                                             <span class="bg-link">
-                                                Home
+                                                Pocetna strana
                                             </span>
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
                                     <a href="<?php bloginfo('template_url'); ?>/games.html">
-                                        <span class="bg-link">games</span>
+                                        <span class="bg-link">Igrice</span>
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
                                     <a href="<?php bloginfo('template_url'); ?>/teachers.html">
-                                        <span class="bg-link">teacher</span>
+                                        <span class="bg-link">nastavnici</span>
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
                                     <a href="<?php bloginfo('template_url'); ?>/my-account.html">
                                             <span class="bg-link">
-                                                Profile
+                                                profil
                                             </span>
                                     </a>
                                 </li>
@@ -122,18 +122,15 @@
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href="<?php bloginfo('template_url'); ?>/games.html">games</a>
+                            <a href="<?php bloginfo('template_url'); ?>/games.php">games</a>
                             <ul class="list-unstyled navbar-mobile__child first">
                                 <li>
-                                    <a href="<?php bloginfo('template_url'); ?>/games.html">Games</a>
+                                    <a href="<?php bloginfo('template_url'); ?>/games.php">Games</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub">
                             <a href="<?php bloginfo('template_url'); ?>/teachers.html">teacher</a>
-                        </li>
-                        <li class="has-sub">
-                            <a href="<?php bloginfo('template_url'); ?>/product-single.html">product</a>
                         </li>
                     </ul>
                 </nav>
