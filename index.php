@@ -5,17 +5,18 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Jobby Theme Templates">
     <meta name="author" content="AuCreative">
-    <meta name="keywords" content="Jobby Theme Templates">
 
     <!-- Title Page-->
     <title>STEM games</title>
 
     <!-- Icons font CSS-->
-    <link href="<?php bloginfo('template_url'); ?>/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="<?php bloginfo('template_url'); ?>/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="<?php bloginfo('template_url'); ?>/vendor/linearicons-free/css/linearicons-free.css" rel="stylesheet" media="all">
+    <link href="<?php bloginfo('template_url'); ?>/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet"
+          media="all">
+    <link href="<?php bloginfo('template_url'); ?>/vendor/mdi-font/css/material-design-iconic-font.min.css"
+          rel="stylesheet" media="all">
+    <link href="<?php bloginfo('template_url'); ?>/vendor/linearicons-free/css/linearicons-free.css" rel="stylesheet"
+          media="all">
     <!-- Base fonts of theme-->
     <link href="<?php bloginfo('template_url'); ?>/css/nunito-font.min.css" rel="stylesheet" media="all">
     <link href="<?php bloginfo('template_url'); ?>/css/chelsea-market-font.min.css" rel="stylesheet" media="all">
@@ -24,11 +25,12 @@
     <link href="<?php bloginfo('template_url'); ?>/css/lobster-font.min.css" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-	<link href="<?php bloginfo('template_url'); ?>/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="<?php bloginfo('template_url'); ?>/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
     <link href="<?php bloginfo('template_url'); ?>/vendor/animate.css/animate.min.css" rel="stylesheet" media="all">
-    <link href="<?php bloginfo('template_url'); ?>/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="<?php bloginfo('template_url'); ?>/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet"
+          media="all">
     <link href="<?php bloginfo('template_url'); ?>/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="<?php bloginfo('template_url'); ?>/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="<?php bloginfo('template_url'); ?>/vendor/lightbox2/css/lightbox.min.css" rel="stylesheet" media="all">
@@ -52,21 +54,6 @@
 <div class="page-wrapper">
     <!-- HEADER-->
     <header id="header">
-        <section class="top-contact-2 p-md-t-15">
-            <div class="wrap wrap--w1790">
-                <div class="container-fluid">
-                    <div class="top-contact-row">
-                        <div class="top-contact-col top-contact-col--alig-center d-none d-lg-flex">
-                            <div class="logo">
-                                <a href="#">
-                                    <img src="<?php bloginfo('template_url'); ?>/images/icon/logo.png" alt="Ucionica"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="header header-2 d-none d-lg-block js-header-1">
             <div class="header__bar">
                 <div class="container">
@@ -81,17 +68,17 @@
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
-								<a href="<?php bloginfo('template_url');?>/games.html">
+                                    <a href="<?php bloginfo('template_url'); ?>/games.html">
                                         <span class="bg-link">games</span>
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
-                                    <a href="<?php bloginfo('template_url');?>/teachers.html">
+                                    <a href="<?php bloginfo('template_url'); ?>/teachers.html">
                                         <span class="bg-link">teacher</span>
                                     </a>
                                 </li>
                                 <li class="header-navbar__item has-sub">
-                                    <a href="<?php bloginfo('template_url');?>/my-account.html">
+                                    <a href="<?php bloginfo('template_url'); ?>/my-account.html">
                                             <span class="bg-link">
                                                 Profile
                                             </span>
@@ -112,9 +99,6 @@
             <div class="header-mobile js-header-mobile d-block d-lg-none">
                 <div class="header-mobile__bar">
                     <div class="container-fluid clearfix">
-                        <a class="logo" href="<?php bloginfo('template_url');?>/index.php">
-                            <img src="<?php bloginfo('template_url'); ?>/images/icon/logo.png" alt="Jooby"/>
-                        </a>
                         <button class="hamburger hamburger--slider float-right" type="button">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -125,31 +109,31 @@
                 <nav class="navbar-mobile">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a href="<?php bloginfo('template_url');?>/index.php">Home</a>
+                            <a href="<?php bloginfo('template_url'); ?>/index.php">Home</a>
                         </li>
                         <li class="has-sub">
                             <ul class="list-unstyled navbar-mobile__child first">
                                 <li>
-                                    <a href="<?php bloginfo('template_url');?>/programs.html">Programs</a>
+                                    <a href="<?php bloginfo('template_url'); ?>/programs.html">Programs</a>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('template_url');?>/404error.html">404 error</a>
+                                    <a href="<?php bloginfo('template_url'); ?>/404error.html">404 error</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href="<?php bloginfo('template_url');?>/games.html">games</a>
+                            <a href="<?php bloginfo('template_url'); ?>/games.html">games</a>
                             <ul class="list-unstyled navbar-mobile__child first">
                                 <li>
-                                    <a href="<?php bloginfo('template_url');?>/games.html">Games</a>
+                                    <a href="<?php bloginfo('template_url'); ?>/games.html">Games</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href="<?php bloginfo('template_url');?>/teachers.html">teacher</a>
+                            <a href="<?php bloginfo('template_url'); ?>/teachers.html">teacher</a>
                         </li>
                         <li class="has-sub">
-                            <a href="<?php bloginfo('template_url');?>/product-single.html">product</a>
+                            <a href="<?php bloginfo('template_url'); ?>/product-single.html">product</a>
                         </li>
                     </ul>
                 </nav>
@@ -166,7 +150,8 @@
                  data-rev-bullets="false">
                 <ul>
                     <li class="rev-item rev-item-5" data-transition="fade">
-					<img class="rev-slidebg" src="<?php bloginfo('template_url'); ?>/images/slide-05.jpg" alt="Master Slider 01"/>
+                        <img class="rev-slidebg" src="<?php bloginfo('template_url'); ?>/images/slide-05.jpg"
+                             alt="Master Slider 01"/>
                         <div class="tp-caption tp-resizeme rev-img-1"
                              data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                              data-x="[left]" data-y="[bottom]" data-hoffset="[-145, -145, -200, -200, -100]"
@@ -217,16 +202,11 @@
                            data-width="['auto']" data-height="[&quot;auto&quot;]"
                            data-responsive_offset="on" data-responsive="off"
                            data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
-                                <span class="rev-btn-1">learn more
-                                    <span class="arrow" data-paddingleft="10">
-                                        <i class="zmdi zmdi-chevron-right"></i>
-                                        <i class="zmdi zmdi-chevron-right"></i>
-                                    </span>
-                                </span>
                         </a>
                     </li>
                     <li class="rev-item rev-item-5" data-transition="fade">
-					<img class="rev-slidebg" src="<?php bloginfo('template_url'); ?>/images/slide-06.jpg" alt="Master Slider 01"/>
+                        <img class="rev-slidebg" src="<?php bloginfo('template_url'); ?>/images/slide-06.jpg"
+                             alt="Master Slider 01"/>
                         <div class="tp-caption tp-resizeme rev-img-1"
                              data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                              data-x="[left]" data-y="[bottom]" data-hoffset="[-145, -145, -200, -200, -100]"
@@ -270,12 +250,6 @@
                            data-width="['auto']" data-height="[&quot;auto&quot;]"
                            data-responsive_offset="on" data-responsive="off"
                            data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
-                                <span class="rev-btn-1">learn more
-                                    <span class="arrow" data-paddingleft="10">
-                                        <i class="zmdi zmdi-chevron-right"></i>
-                                        <i class="zmdi zmdi-chevron-right"></i>
-                                    </span>
-                                </span>
                         </a>
                     </li>
                 </ul>
@@ -307,49 +281,35 @@
                             <div class="box box-program-2 icon-right">
                                 <div class="box__head">
                                     <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-01.png" alt="Background"/>
+                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-02.png"
+                                             alt="Background"/>
                                         <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-01.png" alt="Icon"/>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-02.png"
+                                                 alt="Icon"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__body">
                                     <h3 class="title title--sm title--black box__title">
-                                        <a href="#">Art &amp; Yoga</a>
+                                        <a href="#">Maths</a>
                                     </h3>
-                                    <p>Ut enim ad minima veniam, quis nostrum exercitationem</p>
                                 </div>
                             </div>
                             <div class="box box-program-2 icon-right">
                                 <div class="box__head">
                                     <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-02.png" alt="Background"/>
+                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-03.png"
+                                             alt="Background"/>
                                         <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-02.png" alt="Icon"/>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-03.png"
+                                                 alt="Icon"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__body">
                                     <h3 class="title title--sm title--black box__title">
-                                        <a href="#">Healthy Meals</a>
+                                        <a href="#">Technology</a>
                                     </h3>
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                                </div>
-                            </div>
-                            <div class="box box-program-2 icon-right">
-                                <div class="box__head">
-                                    <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-03.png" alt="Background"/>
-                                        <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-03.png" alt="Icon"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box__body">
-                                    <h3 class="title title--sm title--black box__title">
-                                        <a href="#">External Dynamic</a>
-                                    </h3>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p>
                                 </div>
                             </div>
                         </div>
@@ -357,49 +317,35 @@
                             <div class="box box-program-2">
                                 <div class="box__head">
                                     <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-04.png" alt="Background"/>
+                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-04.png"
+                                             alt="Background"/>
                                         <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-04.png" alt="Icon"/>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-04.png"
+                                                 alt="Icon"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__body">
                                     <h3 class="title title--sm title--black box__title">
-                                        <a href="#">Music &amp; Singing</a>
+                                        <a href="#">Science</a>
                                     </h3>
-                                    <p>It is a long established fact that a reader will be distracted</p>
                                 </div>
                             </div>
                             <div class="box box-program-2">
                                 <div class="box__head">
                                     <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-05.png" alt="Background"/>
+                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-05.png"
+                                             alt="Background"/>
                                         <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-05.png" alt="Icon"/>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-05.png"
+                                                 alt="Icon"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__body">
                                     <h3 class="title title--sm title--black box__title">
-                                        <a href="#">Table/Floor Toys</a>
+                                        <a href="#">Engineering</a>
                                     </h3>
-                                    <p>The point of using Lorem Ipsum is that it has a more-or-less</p>
-                                </div>
-                            </div>
-                            <div class="box box-program-2">
-                                <div class="box__head">
-                                    <div class="box__head-bg">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/icon/bg-program-06.png" alt="Background"/>
-                                        <div class="box__head-icon">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/icon/program-06.png" alt="Icon"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box__body">
-                                    <h3 class="title title--sm title--black box__title">
-                                        <a href="#">Storytime</a>
-                                    </h3>
-                                    <p>Various versions have evolved over the years, sometimes</p>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +365,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading section-heading-1">
-                        <h2 class="section-heading__title">What We Offer</h2>
+                        <h2 class="section-heading__title">STEM education</h2>
                         <div class="section-heading__line">
                             <img src="<?php bloginfo('template_url'); ?>/images/icon/line-blue.png" alt="Line">
                         </div>
@@ -432,47 +378,45 @@
                         <ul class="nav au-tab-list" role="tablist">
                             <li class="au-tab-list__item">
                                 <a class="active show" href="#active" role="tab" data-toggle="tab"
-                                   aria-controls="active" aria-selected="true">active</a>
+                                   aria-controls="active" aria-selected="true">Science</a>
                             </li>
                             <li class="au-tab-list__item">
                                 <a href="#commit" role="tab" data-toggle="tab" aria-controls="commit"
-                                   aria-selected="true">commitment</a>
+                                   aria-selected="true">Technology</a>
                             </li>
                             <li class="au-tab-list__item">
-                                <a href="#out" role="tab" data-toggle="tab" aria-controls="out" aria-selected="true">outings</a>
+                                <a href="#out" role="tab" data-toggle="tab" aria-controls="out" aria-selected="true">Engineering</a>
                             </li>
                             <li class="au-tab-list__item">
-                                <a href="#edu" role="tab" data-toggle="tab" aria-controls="edu" aria-selected="true">education</a>
-                            </li>
-                            <li class="au-tab-list__item">
-                                <a href="#dev" role="tab" data-toggle="tab" aria-controls="dev" aria-selected="true">development</a>
-                            </li>
-                            <li class="au-tab-list__item">
-                                <a href="#club" role="tab" data-toggle="tab" aria-controls="club" aria-selected="true">our
-                                    club</a>
+                                <a href="#edu" role="tab" data-toggle="tab" aria-controls="edu" aria-selected="true">Maths</a>
                             </li>
                         </ul>
                         <div class="tab-content au-tab-content">
                             <div class="tab-pane au-tab-pane fade show active" role="tabpanel" id="active">
                                 <div class="au-tab-pane-inner">
                                     <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">Activities of the baby</h3>
-                                        <p class="m-b-15">If you use this site regularly and would like to help keep the
-                                            site on the Internet. There is no minimum donation, any sum is
-                                            appreciated.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
+                                        <h3 class="title title--lg title--black">Nauka</h3>
+                                        <p class="m-b-15">Nauka se zasniva na istraživanjima koja obično provode
+                                            akademske i istraživačke institucije, kao i vladine agencije i kompanije.
+                                            Praktični utjecaj naučnog istraživanja doveo je do pojave naučnih politika
+                                            koje nastoje utjecati na znanstveno poduzeće davanjem prioriteta razvoju
+                                            komercijalnih proizvoda, naoružanja, zdravstvene zaštite, javne
+                                            infrastrukture i zaštite okoliša. Nauka se zasniva na istraživanjima koja
+                                            obično provode akademske i istraživačke institucije, kao i vladine agencije
+                                            i kompanije.</p>
+                                        <p>Praktični utjecaj naučnog istraživanja doveo je do pojave
+                                            naučnih politika koje nastoje utjecati na znanstveno poduzeće davanjem
+                                            prioriteta razvoju komercijalnih proizvoda, naoružanja, zdravstvene zaštite,
+                                            javne infrastrukture i zaštite okoliša. </p>
                                     </div>
                                     <div class="au-tab-pane__img">
                                         <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg"
+                                                 alt="Offer 1">
                                         </div>
                                         <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg"
+                                                 alt="Offer 2">
                                         </div>
                                     </div>
                                 </div>
@@ -480,24 +424,26 @@
                             <div class="tab-pane au-tab-pane fade" role="tabpanel" id="commit">
                                 <div class="au-tab-pane-inner">
                                     <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">The Commitment</h3>
-                                        <p class="m-b-15">We provide a safe, nurturing and developmentally appropriate
-                                            learning environment for children. We strive to appreciate and respect each
-                                            child’s uniqueness in learning styles and his/her pace in intellectual
-                                            and physical growth.</p>
-                                        <p>Our Staff focuses on each child’s individual needs and promote his/her
-                                            development through providing educational and age-appropriate programs.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
+                                        <h3 class="title title--lg title--black">Tehnologija</h3>
+                                        <p class="m-b-15">Tehnologija ("nauka o zanatu", s grčkog τέχνη, techne,
+                                            "umjetnost, vještina, lukavost ruke"; i -λογία, -logia) je zbroj
+                                            tehnika, vještina, metoda i procesa koji se koriste u proizvodnji roba ili
+                                            usluga ili u postizanju ciljeva, poput naučnog istraživanja. Tehnologija
+                                            može biti poznavanje tehnika, procesa i slično, ili može biti ugrađena u
+                                            mašine kako bi se omogućilo rad bez detaljnog znanja o njihovom radu.
+                                        </p>
+                                        <p>Sistemi (npr. Mašine) koji primjenjuju tehnologiju uzimajući unos,
+                                            mijenjajući ga prema upotrebi sistema, a zatim proizvodeći rezultat,
+                                            nazivaju se tehnološkim sistemima ili tehnološkim sistemima. </p>
                                     </div>
                                     <div class="au-tab-pane__img">
                                         <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg"
+                                                 alt="Offer 1">
                                         </div>
                                         <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg"
+                                                 alt="Offer 2">
                                         </div>
                                     </div>
                                 </div>
@@ -505,24 +451,23 @@
                             <div class="tab-pane au-tab-pane fade" role="tabpanel" id="out">
                                 <div class="au-tab-pane-inner">
                                     <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">Outings</h3>
-                                        <p class="m-b-15">We provide a safe, nurturing and developmentally appropriate
-                                            learning environment for children. We strive to appreciate and respect each
-                                            child’s uniqueness in learning styles and his/her pace in intellectual
-                                            and physical growth.</p>
-                                        <p>Our Staff focuses on each child’s individual needs and promote his/her
-                                            development through providing educational and age-appropriate programs.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
+                                        <h3 class="title title--lg title--black">Inženjerstvo</h3>
+                                        <p class="m-b-15">Inženjerstvo je upotreba naučnih principa za projektovanje i
+                                            izgradnju mašina, konstrukcija i drugih predmeta, uključujući mostove,
+                                            tunele, puteve, vozila i zgrade. </p>
+                                        <p>Inženjerska disciplina obuhvata širok
+                                            spektar specijalizovanijih oblasti tehnike, od kojih svaka ima specifičniji
+                                            naglasak na određenim oblastima primenjene matematike, primenjene nauke i
+                                            vrstama primene. </p>
                                     </div>
                                     <div class="au-tab-pane__img">
                                         <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg"
+                                                 alt="Offer 1">
                                         </div>
                                         <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg"
+                                                 alt="Offer 2">
                                         </div>
                                     </div>
                                 </div>
@@ -530,77 +475,29 @@
                             <div class="tab-pane au-tab-pane fade" role="tabpanel" id="edu">
                                 <div class="au-tab-pane-inner">
                                     <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">Education</h3>
-                                        <p class="m-b-15">We provide a safe, nurturing and developmentally appropriate
-                                            learning environment for children. We strive to appreciate and respect each
-                                            child’s uniqueness in learning styles and his/her pace in intellectual
-                                            and physical growth.</p>
-                                        <p>Our Staff focuses on each child’s individual needs and promote his/her
-                                            development through providing educational and age-appropriate programs.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
+                                        <h3 class="title title--lg title--black">Matematika</h3>
+                                        <p class="m-b-15">Matematika je bitna u mnogim poljima, uključujući prirodne
+                                            nauke, inženjerstvo, medicinu, finansije i društvene nauke. Primijenjena
+                                            matematika dovela je do potpuno novih matematičkih disciplina, poput
+                                            statistike i teorije igara.</p>
+                                        <p>Matematičari se bave čistom matematikom
+                                            (matematika za sebe) bez imajući na umu bilo kakvu primjenu, ali praktične
+                                            primjene za ono što je počelo kao čista matematika često se otkrivaju
+                                            kasnije. </p>
                                     </div>
                                     <div class="au-tab-pane__img">
                                         <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg"
+                                                 alt="Offer 1">
                                         </div>
                                         <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
+                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg"
+                                                 alt="Offer 2">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane au-tab-pane fade" role="tabpanel" id="dev">
-                                <div class="au-tab-pane-inner">
-                                    <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">Development</h3>
-                                        <p class="m-b-15">We provide a safe, nurturing and developmentally appropriate
-                                            learning environment for children. We strive to appreciate and respect each
-                                            child’s uniqueness in learning styles and his/her pace in intellectual
-                                            and physical growth.</p>
-                                        <p>Our Staff focuses on each child’s individual needs and promote his/her
-                                            development through providing educational and age-appropriate programs.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="au-tab-pane__img">
-                                        <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
-                                        </div>
-                                        <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane au-tab-pane fade" role="tabpanel" id="club">
-                                <div class="au-tab-pane-inner">
-                                    <div class="au-tab-pane__text">
-                                        <h3 class="title title--lg title--black">Our Club</h3>
-                                        <p class="m-b-15">We provide a safe, nurturing and developmentally appropriate
-                                            learning environment for children. We strive to appreciate and respect each
-                                            child’s uniqueness in learning styles and his/her pace in intellectual
-                                            and physical growth.</p>
-                                        <p>Our Staff focuses on each child’s individual needs and promote his/her
-                                            development through providing educational and age-appropriate programs.</p>
-                                        <a class="link-learn-more" href="#">learn more
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                            <i class="zmdi zmdi-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="au-tab-pane__img">
-                                        <div class="img-radius img--w160 m-r-30 m-md-r-0">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-01.jpg" alt="Offer 1">
-                                        </div>
-                                        <div class="img-radius img--w220">
-                                            <img src="<?php bloginfo('template_url'); ?>/images/offer-02.jpg" alt="Offer 2">
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -611,19 +508,6 @@
     <!-- END OFFER-->
 
     <!-- FOOTER-->
-    <footer class="footer">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="footer-wrap">
-                    <div class="footer__logo">
-                        <a href="#">
-                            <img src="<?php bloginfo('template_url'); ?>/images/icon/logo.png" alt="Jobby"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <section class="section copyright">
         <div class="container">
             <div class="row">
@@ -665,21 +549,30 @@
 <script src="<?php bloginfo('template_url'); ?>/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/vendor/noUiSlider/nouislider.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/vendor/modalVideo/modal-video.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <!--
 | (Load Extensions only on Local File Systems !
 | The following part can be removed on Server for On Demand Loading)
 -->
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
 <script type="text/javascript"
         src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript"
+        src="<?php bloginfo('template_url'); ?>/vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <!-- Config Revolution Slider-->
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/config-revolution.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/vendor/countdowntime/moment.min.js"></script>
