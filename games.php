@@ -1,3 +1,19 @@
+<?php include '../../../wp-load.php'; ?>
+
+<?php
+$current_user = wp_get_current_user();
+$roles = $current_user->roles;
+$is_teacher = in_array("teacher", $roles);
+$url0 = "igrajmo-se-bojama.php";
+$url1 = "geobord.php";
+$url2 = "kisni-oblak.php";
+if ($is_teacher) {
+	$url0 = "game-stats.php";
+	$url1 = "game-stats.php";
+	$url2 = "game-stats.php";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +26,7 @@
     <meta name="keywords" content="Jobby Theme Templates">
 
     <!-- Title Page-->
-    <title>Nastavnici</title>
+    <title>Igrice</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
@@ -61,17 +77,17 @@
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="games.html">
+                                        <a href="games.php">
                                             <span class="bg-link">igrice</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="teachers.html">
+                                        <a href="teachers.php">
                                             <span class="bg-link">nastavnici</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="my-account.html">
+                                        <a href="/wordpress/wp-admin/profile.php">
                                             <span class="bg-link">
                                                 profil
                                             </span>
@@ -112,15 +128,15 @@
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php bloginfo('template_url'); ?>/games.html">igrice</a>
+                                <a href="<?php bloginfo('template_url'); ?>/games.php">igrice</a>
                                 <ul class="list-unstyled navbar-mobile__child first">
                                     <li>
-                                        <a href="games.html">Igrice</a>
+                                        <a href="games.php">igrice</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="teachers.html">teacher</a>
+                                <a href="teachers.php">nastavnici</a>
                             </li>
                         </ul>
                     </nav>
@@ -134,11 +150,11 @@
 
 
             <!-- PAGE HEADING-->
-            <section class="section page-heading js-parallax-scroll" style="background-image: url('images/bg-heading-02.jpg');">
+            <section class="section page-heading js-parallax-scroll" style="background-image: url('images/bg-heading-03.jpg');">
                 <div class="container">
                     <div class="page-heading-inner">
                         <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
-                            <h2 class="section-heading__title">nastavnici</h2>
+                            <h2 class="section-heading__title">Igrice</h2>
                             <div class="section-heading__line">
                                 <img src="images/icon/line-blue-small.png" alt="Line" />
                             </div>
@@ -146,9 +162,9 @@
                         <nav class="au-breadcrumb">
                             <ul class="list-unstyled list-breadcrumb">
                                 <li class="list-breadcrumb__item">
-                                    <a href="/wordpress/">Početna strana</a>
+                                    <a href="/wordpress/">Početna Strana</a>
                                 </li>
-                                <li class="list-breadcrumb__item">Nastavnici</li>
+                                <li class="list-breadcrumb__item">Igrice</li>
                             </ul>
                         </nav>
                     </div>
@@ -156,122 +172,122 @@
             </section>
             <!-- END PAGE HEADING-->
 
-            <!-- OUR TEACHER-->
-            <section class="section p-t-120 p-md-t-80 p-b-70">
+            <!-- CLASSES-->
+            <section class="section js-isotope-wrapper p-t-125 p-b-80">
+            </section>
+            <!-- END CLASSES-->
+
+            <!-- TEACHER-->
+            <section class="section bg-pink-2 p-t-120 p-md-t-60 p-b-80">
+                <div class="bg-cloud-2">
+                    <img src="images/icon/bg-cloud-06.png" alt="Cloud 1">
+                </div>
+                <div class="bg-cloud-3">
+                    <img src="images/icon/bg-cloud-07.png" alt="Cloud 2">
+                </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-heading section-heading-1">
-                                <h2 class="section-heading__title">Nastavnici</h2>
-                                <div class="section-heading__line">
-                                    <img src="images/icon/line-blue.png" alt="Line">
+                    <div class="container">
+                        <div class="row isotope-content">
+                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer play">
+                                <div class="media media-our-class-3">
+                                    <div class="media__img">
+										<a href="<?php echo $url0; ?>">
+                                            <img src="images/our-class-07.jpg" alt="Igrajmo se bojama" />
+                                        </a>
+                                        <span class="media-our-class__price">
+                                    </span>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title">
+											<a href="<?php echo $url0; ?>">Igrajmo se bojama</a>
+                                        </h3>
+                                        <div class="media-our-class__info">
+                                            <div class="row no-gutters">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <span class="name">Godine:</span>
+                                                        <span class="value">5 - 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer pri">
+                                <div class="media media-our-class-3">
+                                    <div class="media__img">
+										<a href="<?php echo $url1; ?>">
+                                            <img src="images/our-class-08.jpg" alt="Napravimo geobord" />
+                                        </a>
+                                        <span class="media-our-class__price">
+                                    </span>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title">
+											<a href="<?php echo $url1; ?>">Napravimo geobord</a>
+                                        </h3>
+                                        <div class="media-our-class__info">
+                                            <div class="row no-gutters">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <span class="name">Godine:</span>
+                                                        <span class="value">5 - 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer play">
+                                <div class="media media-our-class-3">
+                                    <div class="media__img">
+										<a href="<?php echo $url2; ?>">
+                                            <img src="images/our-class-09.jpg" alt="Kišni oblak" />
+                                        </a>
+                                        <span class="media-our-class__price">
+                                    </span>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title">
+											<a href="<?php echo $url2; ?>">Kišni oblak</a>
+                                        </h3>
+                                        <div class="media-our-class__info">
+                                            <div class="row no-gutters">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <span class="name">Godine:</span>
+                                                        <span class="value">5 - 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                </div>
+            </section>
+            <!-- END TEACHER-->
+
+            <!-- FOOTER-->
+            <section class="section copyright">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="media media-teacher-3">
-                                <div class="media__img">
-                                    <a href="teacher-single.html">
-                                        <img src="images/teacher-06.jpg" alt="Keri En" />
-                                    </a>
-                                </div>
-                                <div class="media__body">
-                                    <h4 class="media__title title title--sm title--black">
-                                        Keri En
-                                    </h4>
-                                    <span class="media__desc">Koordinator za STEM</span>
-                                    <p class="media__text">
-                                        Volim da se bavim ovim. STEM je zabavan i perspektivan, ovim projektom ćemo promeniti svet!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="media media-teacher-3">
-                                <div class="media__img">
-                                    <a href="teacher-single.html">
-                                        <img src="images/teacher-07.jpg" alt="Arturija Pendragon" />
-                                    </a>
-                                </div>
-                                <div class="media__body">
-                                    <h4 class="media__title title title--sm title--black">
-                                        Arturija Pendragon
-                                    </h4>
-                                    <span class="media__desc">Nauka</span>
-                                    <p class="media__text">Nauka je nešto što me privlači celog svog života i pokušavam da svoj entuzijazam prenesem kroz ovaj projekat!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="media media-teacher-3">
-                                <div class="media__img">
-                                    <a href="teacher-single.html">
-                                        <img src="images/teacher-08.jpg" alt="Hinata Hjuga" />
-                                    </a>
-                                </div>
-                                <div class="media__body">
-                                    <h4 class="media__title title title--sm title--black">
-                                        Hinata Hjuga
-                                    </h4>
-                                    <span class="media__desc">Inženjerstvo</span>
-                                    <p class="media__text">Inženjerstvo je vitalni deo tehnologije, podučavanjem dece istim pokušavam da dam svom doprinos čovečanstvu.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="media media-teacher-3">
-                                <div class="media__img">
-                                    <a href="teacher-single.html">
-                                        <img src="images/teacher-09.jpg" alt="Elizabet Lajones" />
-                                    </a>
-                                </div>
-                                <div class="media__body">
-                                    <h4 class="media__title title title--sm title--black">
-                                        Elizabet Lajones
-                                    </h4>
-                                    <span class="media__desc">Tehnologija</span>
-                                    <p class="media__text">Tehnologija! Nauka koja se najbrže razvija i gura čovečanstvo napred. Želim da budem deo ovog projekta jer smatram da je potencijal ogroman.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="media media-teacher-3">
-                                <div class="media__img">
-                                    <a href="teacher-single.html">
-                                        <img src="images/teacher-11.jpg" alt="Juno Gasai" />
-                                    </a>
-                                </div>
-                                <div class="media__body">
-                                    <h4 class="media__title title title--sm title--black">
-                                        Juno Gasai
-                                    </h4>
-                                    <span class="media__desc">Matematika</span>
-                                    <p class="media__text">Matematika, osnovni gradivni deo ogromnog dela nauke. Preciznost, korektnost i procene, sve ovo nam je potrebno za napredak, pa i mladi umovi koji su zainteresovani za istu.</p>
-                                </div>
+                        <div class="col-md-12">
+                            <div class="copyright-wrap">
+                                <span class="copyright__text">© 2021 STEM.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- END OUR TEACHER-->
+            <!-- END FOOTER-->
         </main>
         <!-- END MAIN-->
-
-        <!-- FOOTER-->
-        <section class="section copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright-wrap">
-                            <span class="copyright__text">© 2021 STEM.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END FOOTER-->
     </div>
 
 
@@ -302,7 +318,6 @@
     <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <script src="vendor/noUiSlider/nouislider.min.js"></script>
     <script src="vendor/modalVideo/modal-video.min.js"></script>
-    <script src="js/config-contact.js"></script>
 
     <!-- Main JS-->
     <script src="js/global.js"></script>

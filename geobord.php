@@ -1,3 +1,21 @@
+<?php include '../../../wp-load.php'; ?>
+
+<?php
+$user = wp_get_current_user();
+$roles = $user->roles;
+$is_kid = in_array("kid", $roles);
+if ($is_kid) {
+	$play_count = get_user_meta($user->ID, 'game1', true);
+	if (strlen($play_count) == 0) {
+		add_user_meta($user->ID, 'game1', '1');
+	} else {
+		$new_value = (int)$play_count;
+		$new_value++;
+		update_user_meta($user->ID, 'game1', "$new_value");
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,17 +79,17 @@
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="games.html">
+                                        <a href="games.php">
                                             <span class="bg-link">igrice</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="teachers.html">
+                                        <a href="teachers.php">
                                             <span class="bg-link">nastavnici</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="my-account.html">
+                                        <a href="/wordpress/wp-admin/profile.php">
                                             <span class="bg-link">
                                                 profil
                                             </span>
@@ -112,15 +130,15 @@
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php bloginfo('template_url'); ?>/games.html">igrice</a>
+                                <a href="<?php bloginfo('template_url'); ?>/games.php">igrice</a>
                                 <ul class="list-unstyled navbar-mobile__child first">
                                     <li>
-                                        <a href="games.html">Igrice</a>
+                                        <a href="games.php">Igrice</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="teachers.html">Nastavnici</a>
+                                <a href="teachers.php">nastavnici</a>
                             </li>
                         </ul>
                     </nav>
@@ -164,26 +182,20 @@
                             <div class="p-r-10 p-md-r-0">
                                 <div class="media media-class-single">
                                     <div class="media__img m-b-30">
-                                        <iframe class="img-radius" src="https://scratch.mit.edu/projects/477717014/embed" allowtransparency="true" width="100%" height="700px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                        <iframe class="img-radius" src="https://scratch.mit.edu/projects/477492180/embed" allowtransparency="true" width="100%" height="700px" frameborder="0" scrolling="no" allowfullscreen></iframe>
                                     </div>
                                     <div class="media__body">
-                                        <h2 class="title title--xl m-b-20">Igrajmo se bojama</h2>
+                                        <h2 class="title title--xl m-b-20">Napravimo geobord</h2>
                                         <video width="640" height="480" controls>
-                                            <source src="videos/igrajmo-se-bojama.mp4" type="video/mp4">
+                                            <source src="videos/geobord.mp4" type="video/mp4">
                                              Vaš čitač ne podržava video.
                                          </video>
-                                        <p class="m-b-15">
-                                            Markerom u boji nacrtamo krug oko centra filtera za kafu. Na onom delu gde izgužvani deo sreće centralni glatki deo presavijmo filtar za kafu jednom na pola, pa ponovimo dok ne dobijemo oblik kupe. Uzmimo čašu vode i stavimo vrh ovako dobijene kupe u
-                                            čašu. Vodimo računa da ne ovlažimo nacrtani prsten.
-                                        </p>
+                                        <p class="m-b-15">Na deblje parče kartona, postavimo tiple na podjednakim rastojanjima u obliku pravougaone mreže.</p>
                                         <p class="m-b-30">
-                                            <i>Zadaci za decu:</i>
+                                            <i>Zadaci za decu</i>
                                             <ul style="list-style-type: circle;">
                                                 <li>
-                                                    Šta se dešava sa bojom?
-                                                </li>
-                                                <li>
-                                                    U kojem smeru boje idu?
+                                                    Povlačenjem lastiša i kačenjem za tiple napravite osnovne geometrijske oblike. Nakon toga napravite predmete i oblike iz vašeg okruženja, slova, brojeve itd.
                                                 </li>
                                             </ul>
                                         </p>
@@ -247,7 +259,7 @@
             </section>
             <!-- END CLASS SINGLE-->
 
-            <!-- START OTHER CLASS -->
+            <!-- OTHER CLASS-->
             <section class="section p-t-25 p-md-t-40 p-b-60">
                 <div class="container">
                     <div class="row">
@@ -264,19 +276,19 @@
                                         <div class="slick__item">
                                             <div class="media media-our-class-3">
                                                 <div class="media__img">
-                                                    <a href="geobord.html">
-                                                        <img src="images/our-class-08.jpg" alt="Napravimo geobord" />
+                                                    <a href="igrajmo-se-bojama.php">
+                                                        <img src="images/our-class-07.jpg" alt="Igrajmo se bojama" />
                                                     </a>
                                                 </div>
                                                 <div class="media__body">
                                                     <h3 class="media__title">
-                                                        <a href="geobord.html">Napravimo geobord</a>
+                                                        <a href="igrajmo-se-bojama.php">Igrajmo se bojama</a>
                                                     </h3>
                                                     <div class="media-our-class__info">
                                                         <div class="row no-gutters">
                                                             <div class="col-6">
                                                                 <div>
-                                                                    <span class="name">Godine:</span>
+                                                                    <span class="name">Godine</span>
                                                                     <span class="value">5 - 6</span>
                                                                 </div>
                                                             </div>
@@ -288,13 +300,13 @@
                                         <div class="slick__item">
                                             <div class="media media-our-class-3">
                                                 <div class="media__img">
-                                                    <a href="kisni-oblak.html">
+                                                    <a href="kisni-oblak.php">
                                                         <img src="images/our-class-09.jpg" alt="Kisni oblak" />
                                                     </a>
                                                 </div>
                                                 <div class="media__body">
                                                     <h3 class="media__title">
-                                                        <a href="kisni-oblak.html">Kišni oblak</a>
+                                                        <a href="kisni-oblak.php">Kišni oblak</a>
                                                     </h3>
                                                     <div class="media-our-class__info">
                                                         <div class="row no-gutters">

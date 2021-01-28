@@ -1,3 +1,16 @@
+<?php
+$url = "/wordpress/wp-admin/profile.php";
+if (is_user_logged_in()) {
+    $user = wp_get_current_user();
+    $roles = $user->roles;
+    $is_teacher = in_array("teacher", $roles);
+    if ($is_teacher) {
+        $url = get_bloginfo('template_url') . "/game-stats.php";
+    } else {
+        $url = get_bloginfo('template_url') . "/games.php";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,17 +77,17 @@
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="<?php bloginfo('template_url'); ?>/games.html">
+                                        <a href="<?php echo $url; ?>">
                                             <span class="bg-link">Igrice</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="<?php bloginfo('template_url'); ?>/teachers.html">
+                                        <a href="<?php bloginfo('template_url'); ?>/teachers.php">
                                             <span class="bg-link">nastavnici</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="<?php bloginfo('template_url'); ?>/my-account.html">
+                                        <a href="/wordpress/wp-admin/profile.php">
                                             <span class="bg-link">
                                                 profil
                                             </span>
@@ -118,15 +131,15 @@
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php bloginfo('template_url'); ?>/games.php">games</a>
+                                <a href="<?php echo $url; ?>">games</a>
                                 <ul class="list-unstyled navbar-mobile__child first">
                                     <li>
-                                        <a href="<?php bloginfo('template_url'); ?>/games.php">Games</a>
+                                        <a href="<?php echo $url; ?>">Games</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php bloginfo('template_url'); ?>/teachers.html">teacher</a>
+                                <a href="<?php bloginfo('template_url'); ?>/teachers.php">teacher</a>
                             </li>
                         </ul>
                     </nav>

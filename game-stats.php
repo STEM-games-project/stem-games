@@ -1,3 +1,9 @@
+<?php include '../../../wp-load.php'; ?>
+
+<?php
+$users = get_users( array( 'fields' => array( 'ID' ), 'role' => 'kid' ) );
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +47,35 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<style>
+		table {
+		  border-collapse: collapse;
+		  font-family: Arial, Helvetica, sans-serif;
+		  margin: 0 auto;
+		  width: 100%;
+		}
+		td, th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2;}
+
+		tr:hover {background-color: #ddd;}
+
+		th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  background-color: #4CAF50;
+		  color: white;
+		}
+
+		.centered-content {
+			margin: auto;
+			width: 70%; 
+		}
+	</style>
 </head>
 
 <body class="animsition js-preloader">
@@ -61,17 +96,17 @@
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="games.html">
+                                        <a href="games.php">
                                             <span class="bg-link">igrice</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="teachers.html">
+                                        <a href="teachers.php">
                                             <span class="bg-link">nastavnici</span>
                                         </a>
                                     </li>
                                     <li class="header-navbar__item has-sub">
-                                        <a href="my-account.html">
+                                        <a href="/wordpress/wp-admin/profile.php">
                                             <span class="bg-link">
                                                 profil
                                             </span>
@@ -112,15 +147,15 @@
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php bloginfo('template_url'); ?>/games.html">igrice</a>
+                                <a href="<?php bloginfo('template_url'); ?>/games.php">igrice</a>
                                 <ul class="list-unstyled navbar-mobile__child first">
                                     <li>
-                                        <a href="games.html">igrice</a>
+                                        <a href="games.php">Igrice</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="teachers.html">nastavnici</a>
+                                <a href="teachers.php">nastavnici</a>
                             </li>
                         </ul>
                     </nav>
@@ -146,7 +181,7 @@
                         <nav class="au-breadcrumb">
                             <ul class="list-unstyled list-breadcrumb">
                                 <li class="list-breadcrumb__item">
-                                    <a href="/wordpress/">Početna Strana</a>
+                                    <a href="/wordpress/">Početna strana</a>
                                 </li>
                                 <li class="list-breadcrumb__item">Igrice</li>
                             </ul>
@@ -156,106 +191,126 @@
             </section>
             <!-- END PAGE HEADING-->
 
-            <!-- CLASSES-->
-            <section class="section js-isotope-wrapper p-t-125 p-b-80">
-            </section>
-            <!-- END CLASSES-->
-
-            <!-- TEACHER-->
-            <section class="section bg-pink-2 p-t-120 p-md-t-60 p-b-80">
-                <div class="bg-cloud-2">
-                    <img src="images/icon/bg-cloud-06.png" alt="Cloud 1">
-                </div>
-                <div class="bg-cloud-3">
-                    <img src="images/icon/bg-cloud-07.png" alt="Cloud 2">
-                </div>
+            <!-- CLASS SINGLE-->
+            <section class="section p-t-125">
                 <div class="container">
-                    <div class="container">
-                        <div class="row isotope-content">
-                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer play">
-                                <div class="media media-our-class-3">
-                                    <div class="media__img">
-                                        <a href="igrajmo-se-bojama.html">
-                                            <img src="images/our-class-07.jpg" alt="Igrajmo se bojama" />
-                                        </a>
-                                        <span class="media-our-class__price">
-                                    </span>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title">
-                                            <a href="igrajmo-se-bojama.html">Igrajmo se bojama</a>
-                                        </h3>
-                                        <div class="media-our-class__info">
-                                            <div class="row no-gutters">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <span class="name">Godine:</span>
-                                                        <span class="value">5 - 6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer pri">
-                                <div class="media media-our-class-3">
-                                    <div class="media__img">
-                                        <a href="geobord.html">
-                                            <img src="images/our-class-08.jpg" alt="Napravimo geobord" />
-                                        </a>
-                                        <span class="media-our-class__price">
-                                    </span>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title">
-                                            <a href="geobord.html">Napravimo geobord</a>
-                                        </h3>
-                                        <div class="media-our-class__info">
-                                            <div class="row no-gutters">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <span class="name">Godine:</span>
-                                                        <span class="value">5 - 6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer play">
-                                <div class="media media-our-class-3">
-                                    <div class="media__img">
-                                        <a href="kisni-oblak.html">
-                                            <img src="images/our-class-09.jpg" alt="Kišni oblak" />
-                                        </a>
-                                        <span class="media-our-class__price">
-                                    </span>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title">
-                                            <a href="kisni-oblak.html">Kišni oblak</a>
-                                        </h3>
-                                        <div class="media-our-class__info">
-                                            <div class="row no-gutters">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <span class="name">Godine:</span>
-                                                        <span class="value">5 - 6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="row">
+                        <div style="width:100%;">
+                            <div style="width:100%;">
+                                <div class="media media-class-single">
+								<div class="centered-content">
+										<ul style="list-style-type:circle;">
+											Igrajmo se bojama - zadaci<br>
+											<li>Objasniti deci osnovni koncept materije, molekula i atoma.</li>
+											<li>Šta je to hromatografija?</li>
+											<li>Čemu ona služi?</li>
+										</ul>
+									<br>
+										<ul style="list-style-type:circle;">
+											Geobord - zadaci<br>
+											<li>Zašto je bitno poznavanje osnovnih geometrijskih oblika?</li>
+											<li>Gde ih srećemo u životu?</li>
+											<li>Da li od osnovnih oblika možemo da pravimo kompleksnije oblike?</li>
+											<li>Da li je ovaj način lsičan dobijanju slike na našim ekranima i TV aparatima?</li>
+										</ul>
+									<br>
+										<ul style="list-style-type:circle;">
+											Kisni oblak u tegli - zadaci<br>
+											<li>Objasniti kako nastaje oblak isparavenjem vodene pare.</li>
+											<li>Šta sve u sebe privlači oblak?</li>
+											<li>Šta se mora desiti da bi počela da pada kiša iz oblaka?</li>
+										</ul>
+									<br>
+									<table>
+										<tr>
+											<th>Ime</th>
+											<th>Prezime</th>
+											<th>Igrica 1</th>
+											<th>Igrica 2</th>
+											<th>Igrica 3</th>
+										</tr>
+										<?php foreach ($users as $user): ?>
+										<?php $user_data = get_user_meta($user->ID); ?>
+										<tr>
+											<td>
+												<?php echo $user_data['first_name'][0]; ?>
+											</td>
+											<td>
+												<?php echo $user_data['last_name'][0]; ?>
+											</td>
+											<td>
+												<?php echo $user_data['game0'][0] ?? 0; ?>
+											</td>
+											<td>
+												<?php echo $user_data['game1'][0] ?? 0; ?>
+											</td>
+											<td>
+												<?php echo $user_data['game2'][0] ?? 0; ?>
+											</td>
+										</tr>
+										<?php endforeach; ?>
+									</table>
+									<br>
+									<br>
+								</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
-            <!-- END TEACHER-->
+            <!-- END CLASS SINGLE-->
+
+            <!-- STATISTIC-->
+            <section class="section">
+                <div class="row no-gutters statistic-1">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic__item blue">
+                            <div class="icon">
+                                <img src="images/icon/ic-statis-01.png" alt="icon 1">
+                            </div>
+                            <div class="statistic__item-inner">
+                                <span class="number js-counterup">15</span>
+                                <span class="desc">Nastavnika</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic__item yellow">
+                            <div class="icon">
+                                <img src="images/icon/ic-statis-02.png" alt="icon 2">
+                            </div>
+                            <div class="statistic__item-inner">
+                                <span class="number js-counterup">140</span>
+                                <span class="desc">Polaznika</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic__item pink">
+                            <div class="icon">
+                                <img src="images/icon/ic-statis-03.png" alt="icon 3">
+                            </div>
+                            <div class="statistic__item-inner">
+                                <span class="number js-counterup">1500</span>
+                                <span class="desc">Radnih časova</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic__item green">
+                            <div class="icon">
+                                <img src="images/icon/ic-statis-04.png" alt="icon 4">
+                            </div>
+                            <div class="statistic__item-inner">
+                                <span class="number js-counterup">32</span>
+                                <span class="desc">Odabrane lekcije</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END STATISTIC-->
 
             <!-- FOOTER-->
             <section class="section copyright">
